@@ -15,40 +15,40 @@ header .upper-header button {
   margin-left: 50px;
 }
 
-header .bottom-header {
+header nav .bottom-header {
   padding: 10px 0;
 }
 
-header .bottom-header .container {
+header nav .bottom-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header .bottom-header .container img {
+header nav .bottom-header .container img {
   width: 65px;
 }
 
-header .bottom-header .container ul {
+header nav .bottom-header .container ul {
   display: flex;
   margin-bottom: 0;
 }
 
-header .bottom-header .container ul li {
+header nav .bottom-header .container ul li {
   margin-right: 20px;
   font-weight: 500;
   font-size: 15px;
 }
 
-header .bottom-header .container ul li .custom-dropdown i {
+header nav .bottom-header .container ul li .custom-dropdown i {
   color: #0d6efd;
 }
 
-header .bottom-header .container ul li a {
+header nav .bottom-header .container ul li a {
   color: gray;
 }
 
-header .bottom-header .container input {
+header nav .bottom-header .container input {
   border: 0;
   border-bottom: 2px solid #0d6efd;
   width: 150px;
