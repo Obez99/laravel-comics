@@ -1,8 +1,9 @@
+@import "partials/variables";
 @import "partials/header";
 @import "partials/jumbo-section";
+@import "partials/comics-section";
 
 body{
-  overflow: hidden;
   a{
     text-decoration: none;
   }
