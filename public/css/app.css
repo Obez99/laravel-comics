@@ -1,0 +1,77 @@
+header .upper-header {
+  padding: 2px 0;
+}
+
+header .upper-header button,
+header .upper-header a {
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+header .upper-header button {
+  background-color: unset;
+  border: 0;
+  margin-left: 50px;
+}
+
+header .bottom-header {
+  padding: 10px 0;
+}
+
+header .bottom-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .bottom-header .container img {
+  width: 65px;
+}
+
+header .bottom-header .container ul {
+  display: flex;
+  margin-bottom: 0;
+}
+
+header .bottom-header .container ul li {
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+header .bottom-header .container ul li .custom-dropdown i {
+  color: #0d6efd;
+}
+
+header .bottom-header .container ul li a {
+  color: gray;
+}
+
+header .bottom-header .container input {
+  border: 0;
+  border-bottom: 2px solid #0d6efd;
+  width: 150px;
+}
+
+.jumbo {
+  height: 350px;
+  width: 100%;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-position: center top;
+  background-size: cover;
+}
+
+body {
+  overflow: hidden;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
