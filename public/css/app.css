@@ -80,8 +80,8 @@ header .bottom-header .container input {
   left: 0;
 }
 
-.comics-section .container .comics-container .comics-card {
-  padding-top: 50px;
+.comics-section .container .comics-container {
+  padding: 50px 0;
 }
 
 .comics-section .container .comics-container .comics-card img {
@@ -108,6 +108,23 @@ header .bottom-header .container input {
   margin-bottom: 10px;
   margin-left: 50%;
   transform: translate(-50%);
+}
+
+.shop-section {
+  background-color: #0d6efd;
+  padding: 30px 0;
+}
+
+.shop-section .shop-menu-item a {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.shop-section .shop-menu-item a img {
+  width: 40px;
+  height: 50px;
+  margin-right: 20px;
 }
 
 body a {
