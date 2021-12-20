@@ -1,7 +1,7 @@
 <header>
   <div class="upper-header bg-primary">
     <div class="container d-flex justify-content-end">
-      <a href="#">DC POWER VISA</a>
+      <a href="#">DC POWER℠ VISA®</a>
       <button>ADDITIONAL DC SITES <i class="fas fa-caret-down"></i> </button>
     </div>
   </div>

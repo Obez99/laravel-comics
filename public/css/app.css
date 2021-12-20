@@ -84,6 +84,10 @@ header .bottom-header .container input {
   padding: 50px 0;
 }
 
+.comics-section .container .comics-container .comics-card {
+  margin-bottom: 30px;
+}
+
 .comics-section .container .comics-container .comics-card img {
   height: 200px;
   width: 100%;
@@ -125,6 +129,70 @@ header .bottom-header .container input {
   width: 40px;
   height: 50px;
   margin-right: 20px;
+}
+
+.upper-footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: cover;
+  padding: 30px 0;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.upper-footer p {
+  color: #acabab;
+  font-size: 14px;
+}
+
+.upper-footer .col {
+  flex-wrap: wrap;
+}
+
+.upper-footer .col .footer-bg-logo {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -50px;
+}
+
+.upper-footer .col .footer-list {
+  display: inline-block;
+}
+
+.upper-footer .col .footer-list h5 {
+  color: white;
+}
+
+.upper-footer .col .footer-list a {
+  color: #acabab;
+  font-size: 13px;
+}
+
+.bottom-footer {
+  background-color: #2f2f2f;
+  padding: 20px 0;
+}
+
+.bottom-footer button {
+  padding: 8px;
+  border-color: #0d6efd;
+  background-color: unset;
+  color: white;
+}
+
+.bottom-footer .social-links strong,
+.bottom-footer .social-links img {
+  margin-right: 20px;
+}
+
+.bottom-footer .social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.bottom-footer .social-links strong {
+  color: #0d6efd;
 }
 
 body a {
