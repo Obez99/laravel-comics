@@ -1,5 +1,7 @@
 @extends('layouts.default')
 
+@section('title',"DC Comics - " . $comic["title"])
+
 @section('content')
   <section class="divider">
     <div class="container">
