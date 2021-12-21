@@ -4,8 +4,8 @@
   <section class="divider">
     <div class="container">
       <div class="cover-container">
-        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        <div class="cover-text">COMIC BOOK</div>
+        <img src="{{$comic["thumb"]}}" alt="">
+        <div class="cover-text text-uppercase">{{$comic["type"]}}</div>
         <a href="#" class="cover-text">VIEW GALLERY</a>
       </div>
     </div>
@@ -15,18 +15,16 @@
     <div class="container">
       <div class="row">
         <div class="col-8  my-3">
-          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+          <h3>{{$comic["title"]}}</h3>
           <table class="table price-table">
             <tbody>
               <tr>
-                <td class="price-td"><span>U.S. Price: <span class="text-light">$19.99</span></span><span>AVAILABLE</span></td>
+                <td class="price-td"><span>U.S. Price: <span class="text-light">{{$comic["price"]}}</span></span><span>AVAILABLE</span></td>
                 <td class="text-center availability-td col-3 text-light">Check Availability <i class="fas fa-caret-down"></i></td>
               </tr>
             </tbody>
           </table>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus nemo tempora delectus, ipsam totam nostrum, impedit doloribus, corrupti doloremque commodi iusto fugit nisi nobis sit quaerat esse velit dolorem.
-          Quos enim totam, veritatis doloremque molestiae in error dolore facere veniam voluptatum, sint ipsam sit magnam explicabo, ratione dolorum eaque! Earum ducimus fugiat repellendus necessitatibus laborum fuga? Tempore, fuga qui.
-          Voluptas ipsum error aliquam dolor cupiditate vero consequuntur perspiciatis quisquam, eligendi, illo architecto nobis. Facere maiores nostrum enim? Debitis doloribus temporibus nisi omnis itaque impedit quidem praesentium harum architecto unde?</p>
+          <p>{{$comic["description"]}}</p>
         </div>
         <div class="col-4 d-flex flex-column align-items-end">
           <h5 class="text-end">Advertisement</h5>
@@ -48,11 +46,33 @@
               </tr>
               <tr>
                 <td>Art by:</td>
-                <td class="td-authors"><a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>,</td>
+                <td class="td-authors">
+                  @foreach ($comic["artists"] as $artist)
+                    <a href="#">{{$artist}}</a>
+                    @if ($loop->last)
+                  {{"."}}
+
+                  @else
+                  {{", "}}
+                  @endif
+
+                  @endforeach
+                </td>
               </tr>
               <tr>
                 <td>Written by:</td>
-                <td class="td-authors"><a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>, <a href="#">adsdsa</a>,</td>
+                <td class="td-authors">
+                  @foreach ($comic["writers"] as $writer)
+                  <a href="#">{{$writer}}</a>
+                  @if ($loop->last)
+                  {{"."}}
+
+                  @else
+                  {{", "}}
+                  @endif
+
+                  @endforeach
+                </td>
               </tr>
             </tbody>
           </table>
@@ -66,15 +86,15 @@
               </tr>
               <tr>
                 <td>Series:</td>
-                <td><a href="#">ACTION COMICS</a></td>
+                <td><a href="#" class="text-uppercase">{{$comic["series"]}}</a></td>
               </tr>
               <tr>
                 <td>U.S. Price:</td>
-                <td>$19.99</td>
+                <td>{{$comic["price"]}}</td>
               </tr>
               <tr>
                 <td>On Sale Date:</td>
-                <td>Oct 02 2018</td>
+                <td>{{$comic["sale_date"]}}</td>
               </tr>
             </tbody>
           </table>

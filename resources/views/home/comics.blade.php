@@ -10,9 +10,9 @@
       <div class="comics-container">
         <div class="row row-cols-6">
           @foreach ($comics_list as $comic)
-          <a href="#">
+          <a href="{{route('home.comic_detail', ['id'=>$loop->index])}}">
             <div class="col comics-card">
-              <img src="{{$comic["thumb"]}}" alt="">
+              <img src="{{$comic["thumb"]}}" alt="{{$comic["series"]}}">
               <h6>{{$comic["series"]}}</h6>
             </div> 
           </a>
