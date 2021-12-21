@@ -10,10 +10,12 @@
       <div class="comics-container">
         <div class="row row-cols-6">
           @foreach ($comics_list as $comic)
-          <div class="col comics-card">
-            <img src="{{$comic["thumb"]}}" alt="">
-            <h6>{{$comic["series"]}}</h6>
-          </div> 
+          <a href="#">
+            <div class="col comics-card">
+              <img src="{{$comic["thumb"]}}" alt="">
+              <h6>{{$comic["series"]}}</h6>
+            </div> 
+          </a>
           @endforeach
         </div>
 
