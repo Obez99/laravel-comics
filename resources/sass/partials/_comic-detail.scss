@@ -81,6 +81,69 @@
     .col-3{
       border-right: 1px solid lightgray;
       border-left: 1px solid lightgray;
+      position: relative;
+      cursor: pointer;
+      
+      &:hover{
+        .alt-shop-text{
+          color:$color-primary;
+        }
+
+        .img-1{
+          background: url(../../../public/img/cta-icons.png) 0 -60px;
+          background-size: 240px;
+        }
+        .img-2{
+          background: url(../../../public/img/cta-icons.png) -180px -60px;
+          background-size: 240px;
+        }
+        .img-3{
+          background: url(../../../public/img/cta-icons.png) -120px -60px;
+          background-size: 240px;
+        }
+        .img-4{
+          background: url(../../../public/img/cta-icons.png) -60px -60px;
+          background-size: 240px;
+        }
+      }
+
+      .alt-shop-image{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        bottom:20px;
+        right: 20px;
+        transition: background 0.5s;
+      }
+
+      .alt-shop-text{
+        position: absolute;
+        top:20px;
+        left:20px;
+        font-weight: bold;
+        color:rgb(163, 163, 163);
+        transition: color 0.5s;
+      }
+
+      .img-1{
+        background: url(../../../public/img/cta-icons.png) 0 0;
+        background-size: 240px;
+      }
+
+      .img-2{
+        background: url(../../../public/img/cta-icons.png) -180px 0;
+        background-size: 240px;
+      }
+
+      .img-3{
+        background: url(../../../public/img/cta-icons.png) -120px 0;
+        background-size: 240px;
+      }
+
+      .img-4{
+        background: url(../../../public/img/cta-icons.png) -60px 0;
+        background-size: 240px;
+      }
     }
   }
 }

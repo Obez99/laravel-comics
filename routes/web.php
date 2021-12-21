@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/comics/{id}', function ($id) {
     $comics_data = config("comics");
 
-    return view('home.comic_detail', [
+    return view('comic_page.comic_details', [
         "comic" => $comics_data[$id]
     ]);
-})->name("home.comic_detail");
+})->name("comic_page.comic_details");

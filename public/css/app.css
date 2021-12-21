@@ -279,6 +279,70 @@ header nav .bottom-header .container input {
 .full-page-borders .row .col-3 {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
+  position: relative;
+  cursor: pointer;
+}
+
+.full-page-borders .row .col-3:hover .alt-shop-text {
+  color: #0d6efd;
+}
+
+.full-page-borders .row .col-3:hover .img-1 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 0 -60px;
+  background-size: 240px;
+}
+
+.full-page-borders .row .col-3:hover .img-2 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) -180px -60px;
+  background-size: 240px;
+}
+
+.full-page-borders .row .col-3:hover .img-3 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) -120px -60px;
+  background-size: 240px;
+}
+
+.full-page-borders .row .col-3:hover .img-4 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) -60px -60px;
+  background-size: 240px;
+}
+
+.full-page-borders .row .col-3 .alt-shop-image {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transition: background 0.5s;
+}
+
+.full-page-borders .row .col-3 .alt-shop-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #a3a3a3;
+  transition: color 0.5s;
+}
+
+.full-page-borders .row .col-3 .img-1 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) 0 0;
+  background-size: 240px;
+}
+
+.full-page-borders .row .col-3 .img-2 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) -180px 0;
+  background-size: 240px;
+}
+
+.full-page-borders .row .col-3 .img-3 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) -120px 0;
+  background-size: 240px;
+}
+
+.full-page-borders .row .col-3 .img-4 {
+  background: url(/images/cta-icons.png?66ce11d0fe1c08d1276451a49fdd1bb9) -60px 0;
+  background-size: 240px;
 }
 
 body a {
