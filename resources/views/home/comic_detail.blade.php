@@ -48,13 +48,7 @@
                 <td>Art by:</td>
                 <td class="td-authors">
                   @foreach ($comic["artists"] as $artist)
-                    <a href="#">{{$artist}}</a>
-                    @if ($loop->last)
-                  {{"."}}
-
-                  @else
-                  {{", "}}
-                  @endif
+                    <a href="#">{{$artist}}</a><span>{{$loop->last ? "." : ","}}</span>
 
                   @endforeach
                 </td>
@@ -63,14 +57,7 @@
                 <td>Written by:</td>
                 <td class="td-authors">
                   @foreach ($comic["writers"] as $writer)
-                  <a href="#">{{$writer}}</a>
-                  @if ($loop->last)
-                  {{"."}}
-
-                  @else
-                  {{", "}}
-                  @endif
-
+                  <a href="#">{{$writer}}</a><span>{{$loop->last ? "." : ","}}</span>
                   @endforeach
                 </td>
               </tr>
