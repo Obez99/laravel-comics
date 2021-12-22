@@ -43,7 +43,12 @@
           </tr>
           <tr>
             <td>On Sale Date:</td>
-            <td>{{$comic["sale_date"]}}</td>
+            <td>
+              @php
+                  $comic_date = new DateTime($comic["sale_date"]);
+                  echo $comic_date->format('M d Y');
+              @endphp
+            </td>
           </tr>
         </tbody>
       </table>

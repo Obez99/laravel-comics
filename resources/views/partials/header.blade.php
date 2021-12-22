@@ -21,7 +21,10 @@
           <li><a href="#">NEWS</a></li>
           <li><a href="#" class="custom-dropdown">SHOP <i class="fas fa-caret-down"></i></a></li>
         </ul>
-        <input type="text" placeholder="Search" class="text-end">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search">
+          <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+        </div>
       </div>
     </div>
   </nav>

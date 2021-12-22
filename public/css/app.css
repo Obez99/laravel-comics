@@ -48,10 +48,41 @@ header nav .bottom-header .container ul li a {
   color: gray;
 }
 
-header nav .bottom-header .container input {
-  border: 0;
+header nav .bottom-header .container .input-group {
+  width: 200px;
   border-bottom: 2px solid #0d6efd;
-  width: 150px;
+}
+
+header nav .bottom-header .container .input-group ::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+  text-align: right;
+}
+
+header nav .bottom-header .container .input-group :-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+  text-align: right;
+}
+
+header nav .bottom-header .container .input-group ::placeholder {
+  color: black;
+  font-weight: bold;
+  text-align: right;
+}
+
+header nav .bottom-header .container .input-group .form-control {
+  border: 0;
+  border-radius: 0;
+}
+
+header nav .bottom-header .container .input-group .form-control:focus {
+  box-shadow: unset;
+}
+
+header nav .bottom-header .container .input-group .input-group-text {
+  background-color: unset;
+  border: 0;
 }
 
 .jumbo {
