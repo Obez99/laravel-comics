@@ -22,6 +22,8 @@ Route::get('/', function () {
 
 Route::get('/comics/{id}', function ($id) {
     $comics_data = config("comics");
+    if ($id >= count($comics_data) || $id < 0 || !is_numeric($id))
+        abort(404);
 
     return view('comic_page.comic_details', [
         "comic" => $comics_data[$id]
